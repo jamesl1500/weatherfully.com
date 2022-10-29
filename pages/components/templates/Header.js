@@ -4,14 +4,19 @@ export default function Header()
 {
   return (
     <div className='header'>
-      <div className="innerHeader container">
-        <div className="col-lg-3 branding">
-          <Link href="/index"><h1>Weatherfully</h1></Link>
+        <div className="innerHeader row">
+            <div className="col-lg-3 branding">
+                <Link href="/index">Weatherfully</Link>
+            </div>
+            <div className="col-lg-9 leftWebsiteNavigation">
+                <div className="leftNavigation">
+                    <ul>
+                        <li className="active"><Link href="">Today</Link></li>
+                        <li><Link href="">Week</Link></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div className="col-lg-9">
-          <Link href="/auth/login">Login</Link>
-        </div>
-      </div>
     </div>
   )
 }
